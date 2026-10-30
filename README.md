@@ -24,7 +24,7 @@ Stream-Flex is a video streaming application that allows users to browse, discov
 |----------|--------------|
 | **Frontend** | React 19, TypeScript, Vite, TanStack Router, TanStack Query |
 | **Backend** | Flask, Flask-SQLAlchemy, Flask-Migrate, Flask-CORS |
-| **Database** | SQLite (development), PostgreSQL (production ready) |
+| **Database** | SQLite (currently implemented), PostgreSQL (planned enhancement) |
 | **Authentication** | Werkzeug password hashing |
 | **Styling** | Tailwind CSS 4, Radix UI components |
 | **Deployment** | Cloudflare Workers, Vite |
@@ -432,10 +432,16 @@ npm run preview
 - Comments and reviews system
 - Watch history and favorites
 - Video recommendations based on viewing history
-- Multiple database support (PostgreSQL, MySQL)
+- PostgreSQL database support for production scalability
 - Video streaming optimization
 - Subtitle support
 - Progress tracking
+
+## Database Implementation Note
+
+**Current Implementation**: The project currently uses SQLite as the database. This is a lightweight, file-based database suitable for development and small-scale deployments.
+
+**Planned Enhancement**: PostgreSQL support is planned for production environments to enable better scalability, concurrent access, and advanced database features. The application is architected to support database migration through SQLAlchemy's database abstraction layer.
 
 ## License
 
